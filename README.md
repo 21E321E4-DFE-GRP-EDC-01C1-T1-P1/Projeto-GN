@@ -5,7 +5,7 @@ Esse é um projeto do grupo dos novatos.
 
 <h2>Integrantes</h2>
 <ul>
-  <li>Luís</li>
+  <li>Luiz</li>
   <li>Breno</li>
   <li>Raquel</li>
  </ul>
@@ -14,7 +14,7 @@ Esse é um projeto do grupo dos novatos.
   Uma breve descrição do projeto.
   
 <h2>APIs</h2>
-  Api(s) usadas.
+  Login usando redes sociais
   
 <h2>Tecnologias</h2>
   <ul>
