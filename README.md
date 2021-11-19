@@ -1,5 +1,5 @@
 # Projeto-GN
-Esse é um projeto do grupo dos novatos.
+Esse é o projeto de site do grupo dos novatos.
 
 <h1>21E221E3GRPEDS01C2N2P1</h1>
 
@@ -11,14 +11,17 @@ Esse é um projeto do grupo dos novatos.
  </ul>
 
 <h2>Assunto</h2>
-  Uma breve descrição do projeto.
+  Nós estamos desenvolvendo um site que organiza a agenda dos usuários para que eles possam encaixar na rotina, novos hobbies ou cursos.
   
 <h2>APIs</h2>
-  Login usando redes sociais
+  API própria que entrega os usuários já cadastrados no site.
   
 <h2>Tecnologias</h2>
   <ul>
-    <li>Tecnologias</li>
+    <li>FrameWork - Vue</li>
+    <li>Biblioteca CSS - Bootstrap</li>
+    <li>Biblioteca Vue - Vuex</li>
+    <li>Biblioteca Vue - Vue-router</li>
   </ul>
   
-<h2> Um sistema de balanceamento de atividades</h2>
+<h2> Um sistema de agendamento de atividades</h2>
