@@ -13,9 +13,6 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <p>&copy; Copyright</p>
-        </footer>
     </div>
 </template>
 <script>
@@ -40,11 +37,14 @@ export default {
     border-radius: 10px;
     width: 50%;
     margin-left: 40%;
+    box-shadow: 2px 1px rgb(59, 155, 59);
 }
 #activity_Block h3 {
-    background-color: rgb(16, 150, 16);
-    font-size: larger;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
     color: white;
+    background-color: rgb(16, 150, 16);
     padding: 4px;
 }
 .activity_card {

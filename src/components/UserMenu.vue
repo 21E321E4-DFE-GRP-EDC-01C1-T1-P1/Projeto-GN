@@ -34,6 +34,7 @@ export default {
     border-radius: 10px;
     width: 20%;
     margin-left: 8%;
+    box-shadow: 2px 1px rgb(59, 155, 59);
 }
 #userMenu img {
     width: 100%;
