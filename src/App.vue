@@ -1,23 +1,40 @@
 <template>
-  <UserPage/>
+  <div id="content">
+    <MainMenu />
+    <router-view/>
+  </div>
 </template>
 
 <script>
-import UserPage from './Pages/UserPage.vue'
+import MainMenu from './components/MainMenu.vue'
 
 export default {
-  name: 'App',
   components: {
-    UserPage
+      MainMenu
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content {
+    height: 100%;
+    background: rgb(123, 179, 123);
+}
+main {
+    color: #2c3e50;
+    margin-top: 5%;
+    padding-bottom: 472px;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    color: white;
+    padding: 1px;
+    background-color: black;
 }
 </style>
