@@ -4,7 +4,7 @@
             <UserMenu />
             <div id="categories_Block">
                 <h3>Categorias</h3>
-                <router-link to="/Categorias/Subcategoria">
+                <router-link to="/Categorias/Subcategoria/Música">
                     <div id="music">
                     <hr>
                         <h4>Música  <span class="material-icons">music_note</span></h4>
@@ -12,7 +12,7 @@
                     <hr>
                     </div>
                 </router-link>
-                <router-link to="/Categorias/Subcategoria">
+                <router-link to="/Categorias/Subcategoria/AtividadeFísica">
                     <div id="sports">
                         <hr>
                         <h4>Atividade Física <span class="material-icons">sports_tennis</span></h4>
@@ -20,7 +20,7 @@
                         <hr>
                     </div>
                 </router-link>
-                <router-link to="/Categorias/Subcategoria">
+                <router-link to="/Categorias/Subcategoria/Idiomas">
                     
                     <div id="language">
                     <hr>

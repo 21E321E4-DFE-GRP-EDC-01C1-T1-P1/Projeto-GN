@@ -27,12 +27,28 @@ const routes = [
     component: () => import('../Pages/Categories.vue')
   },
   {
-    path: '/Categorias/Subcategoria',
-    name: 'Subcategory',
+    path: '/Categorias/Subcategoria/Idiomas',
+    name: 'Subcategory_Language',
     meta: {
-      title: "Subcategorias"
+      title: "Subcategorias - Idiomas"
     },
-    component: () => import('../Pages/Subcategories/Subcategory.vue')
+    component: () => import('../Pages/Subcategories/Subcategory_Language.vue')
+  },
+  {
+    path: '/Categorias/Subcategoria/AtividadeFísica',
+    name: 'Subcategory_Sports',
+    meta: {
+      title: "Subcategorias - Atividade Física"
+    },
+    component: () => import('../Pages/Subcategories/Subcategory_Sports.vue')
+  },
+  {
+    path: '/Categorias/Subcategoria/Música',
+    name: 'Subcategory_Music',
+    meta: {
+      title: "Subcategorias - Música"
+    },
+    component: () => import('../Pages/Subcategories/Subcategory_Music.vue')
   }
 ]
 
