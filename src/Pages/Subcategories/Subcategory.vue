@@ -2,30 +2,29 @@
     <div>
         <main>
             <UserMenu />
-            <div id="categories_Block">
-                <h3>Categorias</h3>
+            <div id="subcategory_Block">
+                <h3>Subcategoria</h3>
                 <router-link to="/Categorias/Subcategoria">
-                    <div id="music">
+                    <div id="subcategory_english">
                     <hr>
-                        <h4>Música  <span class="material-icons">music_note</span></h4>
-                        <p>Violão, Teclado e Baixo</p>
+                        <h4>Inglês</h4>
+                        <p>Tempo estimado: 12 horas semanais</p>
                     <hr>
                     </div>
                 </router-link>
                 <router-link to="/Categorias/Subcategoria">
-                    <div id="sports">
+                    <div id="subcategory_spanish">
                         <hr>
-                        <h4>Atividade Física <span class="material-icons">sports_tennis</span></h4>
-                        <p>Musculação, Crossfit e Esportes</p>
+                        <h4>Espanhol</h4>
+                        <p>Tempo estimado: 8 horas semanais</p>
                         <hr>
                     </div>
                 </router-link>
                 <router-link to="/Categorias/Subcategoria">
-                    
-                    <div id="language">
+                    <div id="subcategory_french">
                     <hr>
-                        <h4>Idiomas  <span class="material-icons">auto_stories</span></h4>
-                        <p>Inglês, Espanhol e Francês</p>
+                        <h4>Francês</h4>
+                        <p>Tempo estimado: 15 horas semanais</p>
                     <hr>
                     </div>
                 </router-link>
@@ -35,7 +34,7 @@
 </template>
 
 <script>
-import UserMenu from '../components/UserMenu.vue'
+import UserMenu from '../../components/UserMenu.vue'
 
 export default {
     components: {
@@ -46,7 +45,7 @@ export default {
 
 <style scoped>
 /* Css para o Main */
-#categories_Block {
+#subcategory_Block {
     background-color: whitesmoke;
     padding: 5px;
     border-radius: 10px;
@@ -54,7 +53,7 @@ export default {
     margin-left: 40%;
     box-shadow: 2px 1px rgb(59, 155, 59);
 }
-#categories_Block h3 {
+#subcategory_Block h3 {
     font-size: 24px;
     font-weight: bold;
     border-radius: 5px;
@@ -69,7 +68,19 @@ a:link, a:visited {
     color: #2c3e50;
     text-decoration: none;
 }
-a:hover div{
-    background-color: rgb(219, 216, 216);
+#subcategory_english {
+    background: url('../../assets/english_flag.png') no-repeat 100% 50%;
+    filter: grayscale(0.8);
+}
+#subcategory_spanish {
+    background: url('../../assets/spanish_flag.png') no-repeat 100% 50%;
+    filter: grayscale(0.8);
+}
+#subcategory_french {
+    background: url('../../assets/french_flag.png') no-repeat 100% 50%;
+    filter: grayscale(0.8);
+}
+#subcategory_Block div:hover {
+    filter: none;
 }
 </style>

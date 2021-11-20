@@ -22,13 +22,12 @@ export default {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-#content {
+body {
     height: 100%;
-    background: linear-gradient(rgb(106, 184, 106),rgb(123, 179, 123),rgb(140, 190, 140));
+    background: linear-gradient(rgb(106, 184, 106),rgb(123, 179, 123),rgb(140, 190, 140)) no-repeat fixed;
 }
 main {
     color: #2c3e50;
     margin-top: 5%;
-    padding-bottom: 472px;
 }
 </style>

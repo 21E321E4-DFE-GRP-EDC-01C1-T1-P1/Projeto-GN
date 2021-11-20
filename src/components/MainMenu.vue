@@ -3,10 +3,13 @@
         <ul id="mainMenu">
             <li class="material-icons menu_icon">explore</li>
             <router-link to="/">Home</router-link>
-            <router-link to="/usuario">Página de usuário</router-link>
-            <router-link to="/categorias">Categorias</router-link>
+            <router-link to="/Usuário">Página de usuário</router-link>
+            <router-link to="/Categorias">Categorias</router-link>
             <li class="itemR"><a href="#">Sair</a></li>
         </ul>
+        <button @click="$router.go(-1)" class="btn btn-success btn-sm">
+            <span class="material-icons">arrow_back</span>
+        </button>
     </header>
 </template>
 
@@ -16,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* Css para o Header */
 #mainMenu {
     background: linear-gradient(to right, rgb(24, 158, 24),rgb(17, 163, 17),rgb(6, 139, 6));
@@ -50,5 +53,12 @@ a:link, a:visited {
 }
 a:hover {
     background-color: rgb(9, 105, 9);
+}
+.btn {
+    float: right;
+    font-size: 0px;
+    padding: 5px 6px;
+    margin-right: 1.5%;
+    border-radius: 100%;
 }
 </style>

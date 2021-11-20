@@ -11,6 +11,7 @@
                         <p>Tempo decorrido: {{activity.currentTime}}</p>
                     </div>
                 </div>
+                <router-link to="/Categorias"><button class="btn btn-success btn-sm">+</button></router-link>
             </div>
         </main>
     </div>
@@ -29,7 +30,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
 /* Css para o Main */
 #activity_Block {
     background-color: whitesmoke;
@@ -47,9 +48,19 @@ export default {
     background-color: rgb(16, 150, 16);
     padding: 4px;
 }
+#activity_Block p {
+    font-weight: bold;
+    margin-left: 4px;
+}
 .activity_card {
     padding: 5px;
     background-color: whitesmoke;
     border-radius: 15px;
+}
+.btn {
+    font-size: 24px;
+    padding: 0px 12px;
+    margin-left: 94%;
+    border-radius: 100%;
 }
 </style>

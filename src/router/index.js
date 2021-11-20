@@ -8,14 +8,19 @@ const routes = [
     component: Home
   },
   {
-    path: '/usuario',
-    name: 'userpage',
+    path: '/Usuário',
+    name: 'UserPage',
     component: () => import('../Pages/UserPage.vue')
   },
   {
-    path: '/categorias',
-    name: 'categories',
+    path: '/Categorias',
+    name: 'Categories',
     component: () => import('../Pages/Categories.vue')
+  },
+  {
+    path: '/Categorias/Subcategoria',
+    name: 'Subcategory',
+    component: () => import('../Pages/Subcategories/Subcategory.vue')
   }
 ]
 

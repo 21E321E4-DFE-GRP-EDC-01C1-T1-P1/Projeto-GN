@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img id="logo" src="../assets/logo.png" title="Site logo" alt="Site logo">
   </div>
 </template>
 
@@ -10,3 +10,9 @@ export default {
   name: 'Home'
 }
 </script>
+
+<style scoped>
+#logo {
+  margin: auto;
+}
+</style>

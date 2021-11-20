@@ -26,11 +26,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #userMenu {
     float: left;
     background-color: whitesmoke;
     padding: 5px;
+    border: 2px grey solid;
     border-radius: 10px;
     width: 20%;
     margin-left: 8%;

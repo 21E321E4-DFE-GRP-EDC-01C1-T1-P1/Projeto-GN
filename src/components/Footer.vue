@@ -10,13 +10,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 footer {
-    position: absolute;
-    width: 100%;
-    height: 60px;
     color: white;
-    padding: 1px;
+    padding: 3px;
     background-color: black;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    position: fixed;
 }
 </style>
