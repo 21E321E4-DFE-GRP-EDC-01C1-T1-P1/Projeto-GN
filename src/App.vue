@@ -13,6 +13,11 @@ import Footer from './components/Footer.vue'
 export default {
   components: {
       MainMenu, Footer
+  },
+  watch: {
+  $route(to) {
+     document.title = `${to.meta.title}`;
+    }
   }
 }
 </script>
@@ -24,7 +29,8 @@ export default {
 }
 body {
     height: 100%;
-    background: linear-gradient(rgb(106, 184, 106),rgb(123, 179, 123),rgb(140, 190, 140)) no-repeat fixed;
+    background: url('./assets/background.png') no-repeat fixed 20% 35%;
+    /* background: linear-gradient(rgb(106, 184, 106),rgb(123, 179, 123),rgb(140, 190, 140)) no-repeat fixed; */
 }
 main {
     color: #2c3e50;
