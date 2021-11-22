@@ -5,7 +5,10 @@
             <router-link to="/">Home</router-link>
             <router-link to="/Usuário">Página de usuário</router-link>
             <router-link to="/Categorias">Categorias</router-link>
-            <li class="itemR"><a href="#">Sair</a></li>
+            <li class="itemR"><a href="#" v-if="logado == true">Sair</a></li>
+            <li class="register"><router-link to="/Login">Login</router-link>
+            <router-link to="/Cadastro">Cadastro</router-link></li>
+            
         </ul>
         <button @click="$router.go(-1)" class="btn btn-success btn-sm">
             <span class="material-icons">arrow_back</span>
@@ -15,7 +18,7 @@
 
 <script>
 export default {
-    name: "MainMenu"
+    name: "MainMenu",
 }
 </script>
 
@@ -44,6 +47,10 @@ export default {
 .itemR a:hover {
     background-color: darkgreen;
     border-radius: 8px;
+}
+.register {
+    float: right;
+    padding-top: 7px;
 }
 a:link, a:visited {
     color: whitesmoke !important;
