@@ -65,6 +65,14 @@ const routes = [
       title: "Subcategorias - Música"
     },
     component: () => import('../Pages/Subcategories/Subcategory_Music.vue')
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'PageNotFound',
+    meta: {
+      title: "Página não encontrada"
+    },
+    component: () => import('../Pages/PageNotFound.vue')
   }
 ]
 

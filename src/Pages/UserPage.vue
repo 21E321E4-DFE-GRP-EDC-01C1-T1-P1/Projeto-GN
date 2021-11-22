@@ -38,6 +38,7 @@ export default {
     border-radius: 10px;
     width: 50%;
     margin-left: 40%;
+    padding-bottom: 43px;
     box-shadow: 2px 1px rgb(59, 155, 59);
 }
 #activity_Block h3 {
@@ -58,9 +59,15 @@ export default {
     border-radius: 15px;
 }
 .btn {
+    float: right;
     font-size: 24px;
     padding: 0px 12px;
-    margin-left: 94%;
     border-radius: 100%;
+}
+@media screen and (max-width: 580px){
+    #activity_Block {
+        width: 80%;
+        margin: 0% 0% 15% 8%;
+    }
 }
 </style>
