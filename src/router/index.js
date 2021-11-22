@@ -27,6 +27,22 @@ const routes = [
     component: () => import('../Pages/Categories.vue')
   },
   {
+    path: '/Login',
+    name: 'Login',
+    meta: {
+      title: "Login"
+    },
+    component: () => import('../Pages/Login.vue')
+  },
+  {
+    path: '/Cadastro',
+    name: 'Cadastro',
+    meta: {
+      title: "Cadastro"
+    },
+    component: () => import('../Pages/Cadastro.vue')
+  },
+  {
     path: '/Categorias/Subcategoria/Idiomas',
     name: 'Subcategory_Language',
     meta: {
