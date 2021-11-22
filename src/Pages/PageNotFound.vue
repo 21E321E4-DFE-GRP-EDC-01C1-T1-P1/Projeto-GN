@@ -28,4 +28,10 @@ export default {
     background-color: rgb(16, 150, 16);
     padding: 4px;
 }
+@media screen and (max-width: 580px){
+    #error_msg {
+        width: 80%;
+        margin: 0% 0% 15% 8%;
+    }
+}
 </style>

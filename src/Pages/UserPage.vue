@@ -67,7 +67,7 @@ export default {
 @media screen and (max-width: 580px){
     #activity_Block {
         width: 80%;
-        margin-left: 8%;
+        margin: 0% 0% 15% 8%;
     }
 }
 </style>

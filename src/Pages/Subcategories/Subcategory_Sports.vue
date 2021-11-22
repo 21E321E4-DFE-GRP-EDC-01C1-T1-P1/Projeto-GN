@@ -86,7 +86,7 @@ a:link, a:visited {
 @media screen and (max-width: 580px){
     #subcategory_Block {
         width: 80%;
-        margin-left: 8%;
+        margin: 0% 0% 15% 8%;
     }
 }
 </style>

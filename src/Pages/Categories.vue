@@ -75,7 +75,7 @@ a:hover div{
 @media screen and (max-width: 580px){
     #categories_Block {
         width: 80%;
-        margin-left: 8%;
+        margin: 0% 0% 15% 8%;
     }
 }
 </style>
