@@ -41,8 +41,26 @@ export default {
     width: 100%;
     border-radius: 5px 5px 0px 0px;
 }
+#userMenu p {
+    word-break: break-word;
+}
 #userMenu span {
     font-size: 40px;
     padding: 5%;
+}
+@media screen and (max-width: 580px){
+    #userMenu {
+        float: none;
+        width: 80%;
+        margin-bottom: 4%;
+    }
+    #userMenu img {
+        width: 20%;
+        border: 1px grey solid;
+        border-radius: 5px;
+    }
+    #userMenu span {
+        padding: 0% 5% 0% 5%;
+    }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="content">
         <main>
             <UserMenu />
             <div id="categories_Block">
@@ -71,5 +71,11 @@ a:link, a:visited {
 }
 a:hover div{
     background-color: rgb(219, 216, 216);
+}
+@media screen and (max-width: 580px){
+    #categories_Block {
+        width: 80%;
+        margin-left: 8%;
+    }
 }
 </style>

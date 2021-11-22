@@ -6,9 +6,10 @@
             <router-link to="/Usuário">Página de usuário</router-link>
             <router-link to="/Categorias">Categorias</router-link>
             <li class="itemR"><a href="#" v-if="logado == true">Sair</a></li>
-            <li class="register"><router-link to="/Login">Login</router-link>
-            <router-link to="/Cadastro">Cadastro</router-link></li>
-            
+            <li class="itemR">
+                <router-link to="/Login">Login</router-link>
+                <router-link to="/Cadastro">Cadastro</router-link>
+            </li>
         </ul>
         <button @click="$router.go(-1)" class="btn btn-success btn-sm">
             <span class="material-icons">arrow_back</span>
@@ -38,20 +39,6 @@ export default {
     padding: 3px 4px;
     margin: -5px 5px -5px -5px;
 }
-.itemR {
-    float: right;
-    background-color: green;
-    border: 1px darkgreen solid;
-    border-radius: 8px;
-}
-.itemR a:hover {
-    background-color: darkgreen;
-    border-radius: 8px;
-}
-.register {
-    float: right;
-    padding-top: 7px;
-}
 a:link, a:visited {
     color: whitesmoke !important;
     font-weight: bold;
@@ -62,10 +49,25 @@ a:hover {
     background-color: rgb(9, 105, 9);
 }
 .btn {
-    float: right;
+    /* float: right; */
     font-size: 0px;
     padding: 5px 6px;
-    margin-right: 1.5%;
+    margin-left: 90%;
     border-radius: 100%;
+}
+.itemR {
+    float: right;
+    background-color: green;
+    border: 1px darkgreen solid;
+    border-radius: 8px;
+}
+.itemR a:hover {
+    background-color: darkgreen;
+    border-radius: 8px;
+}
+@media screen and (max-width: 472px) {
+    .itemR {
+        margin: 10px;
+    }
 }
 </style>

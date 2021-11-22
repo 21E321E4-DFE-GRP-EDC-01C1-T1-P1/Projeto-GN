@@ -83,4 +83,10 @@ a:link, a:visited {
 #subcategory_Block div:hover {
     filter: none;
 }
+@media screen and (max-width: 580px){
+    #subcategory_Block {
+        width: 80%;
+        margin-left: 8%;
+    }
+}
 </style>

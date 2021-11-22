@@ -34,6 +34,6 @@ body {
 }
 main {
     color: #2c3e50;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 </style>
