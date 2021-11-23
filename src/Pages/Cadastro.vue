@@ -3,11 +3,11 @@
     <h3>Cadastro</h3>
     <div id="nome">
       <span>Nome</span><br>
-      <input type="text" name="nome" placeholder="Primeiro Nome" required>
+      <input type="text" name="nome" placeholder="" required>
     </div>
     <div id="sobrenome">
       <span>Sobrenome</span><br>
-      <input type="text" name="sobrenome" placeholder="Último Nome" required>
+      <input type="text" name="sobrenome" placeholder="" required>
     </div>
     <div id="email">
       <span>E-mail</span><br>
@@ -28,9 +28,9 @@
     <div id="genero">
       <span>Gênero</span><br>
       <input type="radio" name="gender" id="male" value="male">
-      <label for="male">H</label>
+      <label for="male">M</label>
       <input type="radio" name="gender" id="female" value="female">
-      <label for="female">M</label>
+      <label for="female">F</label>
       <input type="radio" name="gender" id="other" value="other">
       <label for="other">Outro</label>
     </div>

@@ -4,7 +4,7 @@
             <UserMenu />
             <div id="subcategory_Block">
                 <h3>Subcategoria</h3>
-                <router-link to="/Categorias/Subcategoria">
+                <router-link to="/Categorias/Subcategoria/Idiomas/Inglês">
                     <div id="subcategory_english">
                     <hr>
                         <h4>Inglês</h4>
@@ -12,7 +12,7 @@
                     <hr>
                     </div>
                 </router-link>
-                <router-link to="/Categorias/Subcategoria">
+                <router-link to="/Categorias/Subcategoria/Idiomas/Espanhol">
                     <div id="subcategory_spanish">
                         <hr>
                         <h4>Espanhol</h4>
@@ -20,7 +20,7 @@
                         <hr>
                     </div>
                 </router-link>
-                <router-link to="/Categorias/Subcategoria">
+                <router-link to="/Categorias/Subcategoria/Idiomas/Francês">
                     <div id="subcategory_french">
                     <hr>
                         <h4>Francês</h4>

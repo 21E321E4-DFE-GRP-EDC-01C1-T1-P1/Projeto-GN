@@ -4,7 +4,7 @@
             <UserMenu />
             <div id="subcategory_Block">
                 <h3>Subcategoria</h3>
-                <router-link to="/Categorias/Subcategoria">
+                <router-link to="/Categorias/Subcategoria/AtividadeFísica/Musculação">
                     <div id="subcategory_bodybuilding">
                     <hr>
                         <h4>Musculação</h4>
@@ -12,7 +12,7 @@
                     <hr>
                     </div>
                 </router-link>
-                <router-link to="/Categorias/Subcategoria">
+                <router-link to="/Categorias/Subcategoria/AtividadeFísica/Crossfit">
                     <div id="subcategory_crossfit">
                         <hr>
                         <h4>Crossfit</h4>
@@ -20,7 +20,7 @@
                         <hr>
                     </div>
                 </router-link>
-                <router-link to="/Categorias/Subcategoria">
+                <router-link to="/Categorias/Subcategoria/AtividadeFísica/Esportes">
                     <div id="subcategory_sports">
                     <hr>
                         <h4>Esportes</h4>

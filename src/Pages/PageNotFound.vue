@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #error_msg {
     background-color: whitesmoke;
     padding: 5px;

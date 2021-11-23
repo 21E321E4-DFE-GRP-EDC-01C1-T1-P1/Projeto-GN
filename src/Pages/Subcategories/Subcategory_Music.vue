@@ -4,7 +4,7 @@
             <UserMenu />
             <div id="subcategory_Block">
                 <h3>Subcategoria</h3>
-                <router-link to="/Categorias/Subcategoria">
+                <router-link to="/Categorias/Subcategoria/Música/Violão">
                     <div id="subcategory_guitar">
                     <hr>
                         <h4>Violão</h4>
@@ -12,7 +12,7 @@
                     <hr>
                     </div>
                 </router-link>
-                <router-link to="/Categorias/Subcategoria">
+                <router-link to="/Categorias/Subcategoria/Música/Teclado">
                     <div id="subcategory_keyboard">
                         <hr>
                         <h4>Teclado</h4>
@@ -20,7 +20,7 @@
                         <hr>
                     </div>
                 </router-link>
-                <router-link to="/Categorias/Subcategoria">
+                <router-link to="/Categorias/Subcategoria/Música/Bateria">
                     <div id="subcategory_drums">
                     <hr>
                         <h4>Bateria</h4>
