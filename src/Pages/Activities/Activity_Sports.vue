@@ -16,17 +16,21 @@
             <p>10 horas semanais</p>
             <h4>Curso Livre</h4>
             <p>0 participantes atualmente</p>
-            <button class="btn btn-success btn-sm">+</button>
+            <button class="btn btn-success btn-sm" @click="addActivity({name: 'Esportes', currentTime: `${new Date().getDate()} / ${new Date().getMonth()+1} / ${new Date().getFullYear()} `})">+</button>
         </div>
     </main>
 </template>
 
 <script>
 import UserMenu from '../../components/UserMenu.vue'
+import { mapMutations } from 'vuex'
 
 export default {
     components: {
         UserMenu
+    },
+    methods: {
+        ...mapMutations(['addActivity'])
     }
 }
 </script>

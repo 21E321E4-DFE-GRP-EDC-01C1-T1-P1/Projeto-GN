@@ -7,12 +7,19 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import MainMenu from './components/MainMenu.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   components: {
       MainMenu, Footer
+  },
+  methods: {
+    ...mapActions(['fetchUsers'])
+  },
+  created() {
+    this.fetchUsers()
   },
   watch: {
   $route(to) {

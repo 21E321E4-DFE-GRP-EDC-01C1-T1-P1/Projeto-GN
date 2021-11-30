@@ -28,11 +28,6 @@
 <script>
 import UserMenu from '../components/UserMenu.vue'
 export default {
-    data() {
-        return {
-             activities: [/*{name: "Inglês", currentTime: "X min"}*/]
-        }
-    },
     components: {
         UserMenu
     }

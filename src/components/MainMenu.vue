@@ -5,8 +5,8 @@
             <router-link to="/">Home</router-link>
             <router-link to="/Usuário">Página de usuário</router-link>
             <router-link to="/Categorias">Categorias</router-link>
-            <li class="itemR"><a href="#" v-if="logado == true">Sair</a></li>
-            <li class="itemR">
+            <li class="itemR" v-if="!$store.state.user"><a href="#">Sair</a></li>
+            <li class="itemR" v-else>
                 <router-link to="/Login">Login</router-link>
                 <router-link to="/Cadastro">Cadastro</router-link>
             </li>

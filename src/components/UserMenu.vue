@@ -2,9 +2,9 @@
     <div id="userMenu">
         <div><img src="../assets/generic_profile_photo.jpg" alt="profile" title="profile"/></div>
         <hr>
-        <p><b>Nome:</b> {{user.username}}</p>
-        <p><b>Email:</b> {{user.email}}</p>
-        <p><b>telefone:</b> {{user.celNumber}}</p>
+        <p><b>Nome:</b> {{$store.state.user.name}}</p>
+        <p><b>Email:</b> {{$store.state.user.email}}</p>
+        <p><b>telefone:</b> {{$store.state.user.cell}}</p>
         <hr>
         <div>
             <span class="material-icons">add_task</span>
@@ -16,12 +16,12 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
     name: "UserMenu",
-    data() {
-        return {
-            user: {username: "Usuário 1", email: "user@gmail.com", celNumber: "99999-9999"}
-        }
+    methods: {
+        ...mapState(['user'])
     }
 }
 </script>

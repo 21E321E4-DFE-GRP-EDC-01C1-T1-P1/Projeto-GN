@@ -4,11 +4,11 @@
             <UserMenu />
             <div id="activity_Block">
                 <h3>Minhas Atividades</h3>
-                <p v-if="activities < 1">Nenhuma atividade no momento.</p>
-                <div v-else v-for="activity in activities" :key="activity.id">
+                <p v-if="$store.state.user.activities < 1">Nenhuma atividade no momento.</p>
+                <div id="activity_panel" v-else v-for="activity in $store.state.user.activities" :key="activity.name">
                     <div class="activity_card">
-                        <h3>{{activity.name}}</h3>
-                        <p>Tempo decorrido: {{activity.currentTime}}</p>
+                        <h4>{{activity.name}}</h4><hr>
+                        <p>Data de início: {{activity.currentTime}}</p>
                     </div>
                 </div>
                 <router-link to="/Categorias"><button class="btn btn-success btn-sm">+</button></router-link>
@@ -18,15 +18,14 @@
 </template>
 <script>
 import UserMenu from '../components/UserMenu.vue'
+import { mapState } from 'vuex'
 
 export default {
-    data() {
-        return {
-             activities: [/*{name: "Inglês", currentTime: "X min"}*/]
-        }
-    },
     components: {
         UserMenu
+    },
+    methods: {
+        ...mapState(['user'])
     }
 }
 </script>
@@ -53,10 +52,23 @@ export default {
     font-weight: bold;
     margin-left: 4px;
 }
+#activity_panel {
+    display: inline-block;
+}
 .activity_card {
+    width: 95%;
+    margin: 10px;
     padding: 5px;
-    background-color: whitesmoke;
+    border: 1px black solid;
     border-radius: 15px;
+    box-shadow: 1px 1px rgb(184, 182, 182);
+    background-color: rgb(238, 234, 234);
+}
+.activity_card h4 {
+    font-weight: bold;
+}
+.activity_card hr {
+    margin-bottom: 5px;
 }
 .btn {
     float: right;
@@ -68,6 +80,9 @@ export default {
     #activity_Block {
         width: 80%;
         margin: 0% 0% 15% 8%;
+    }
+    .activity_card {
+        width: 90%;
     }
 }
 </style>
