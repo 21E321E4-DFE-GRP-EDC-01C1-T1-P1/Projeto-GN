@@ -1,16 +1,16 @@
 <template>
-    <form id="login">
+    <form id="login" @submit.prevent="efetuateLogin({ email: this.email, password: this.password})">
 		<h3>Login</h3>
 		<div id="email">
 			<span>E-mail:</span>
-			<input type="email" name="email" placeholder=" Digite seu email" required>
+			<input type="email" name="email" v-model="email" placeholder=" Digite seu email" required>
 		</div>
 		<div id="senha">
 			<span>Senha:</span>
-			<input type="password" name="senha" placeholder=" Digite sua senha" required>
+			<input type="password" name="senha" v-model="password" placeholder=" Digite sua senha" required>
 		</div>
 		<div id="btnLogin">
-			<button class="btn btn-dark">Entrar</button>
+			<button class="btn btn-dark" type="submit">Entrar</button>
 		</div>
 		<div id="cadastre-se">
 			<router-link to="/Cadastro">Cadastre-se</router-link>	
@@ -22,8 +22,22 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex'
+
 export default {
-    name: "Form"
+    name: "Form",
+	data() {
+		return {
+			email: "",
+			password: ""
+		}
+	},
+	computed: {
+		...mapState(['users'])
+	},
+	methods: {
+		...mapMutations(['efetuateLogin']),
+	}
 }
 </script>
 

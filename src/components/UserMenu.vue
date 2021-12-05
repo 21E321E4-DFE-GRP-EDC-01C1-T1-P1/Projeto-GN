@@ -2,9 +2,9 @@
     <div id="userMenu">
         <div><img src="../assets/generic_profile_photo.jpg" alt="profile" title="profile"/></div>
         <hr>
-        <p><b>Nome:</b> {{$store.state.user.name}}</p>
-        <p><b>Email:</b> {{$store.state.user.email}}</p>
-        <p><b>telefone:</b> {{$store.state.user.cell}}</p>
+        <p><b>Nome:</b> {{$store.state.activeUser.name}}</p>
+        <p><b>Email:</b> {{$store.state.activeUser.email}}</p>
+        <p><b>telefone:</b> {{$store.state.activeUser.cellNumber}}</p>
         <hr>
         <div>
             <span class="material-icons">add_task</span>

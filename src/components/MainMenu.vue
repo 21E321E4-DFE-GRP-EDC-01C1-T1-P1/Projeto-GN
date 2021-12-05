@@ -3,9 +3,9 @@
         <ul id="mainMenu">
             <li class="material-icons menu_icon">explore</li>
             <router-link to="/">Home</router-link>
-            <router-link to="/Usuário">Página de usuário</router-link>
-            <router-link to="/Categorias">Categorias</router-link>
-            <li class="itemR" v-if="!$store.state.user"><a href="#">Sair</a></li>
+            <router-link to="/Usuário" v-if="$store.state.activeUser">Página de usuário</router-link>
+            <router-link to="/Categorias" v-if="$store.state.activeUser">Categorias</router-link>
+            <li class="itemR" v-if="$store.state.activeUser" @click="$store.state.activeUser = false"><router-link to="/">Sair</router-link></li>
             <li class="itemR" v-else>
                 <router-link to="/Login">Login</router-link>
                 <router-link to="/Cadastro">Cadastro</router-link>

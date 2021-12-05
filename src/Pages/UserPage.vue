@@ -4,8 +4,8 @@
             <UserMenu />
             <div id="activity_Block">
                 <h3>Minhas Atividades</h3>
-                <p v-if="$store.state.user.activities < 1">Nenhuma atividade no momento.</p>
-                <div id="activity_panel" v-else v-for="activity in $store.state.user.activities" :key="activity.name">
+                <p v-if="$store.state.activeUser.activities < 1">Nenhuma atividade no momento.</p>
+                <div id="activity_panel" v-else v-for="activity in $store.state.activeUser.activities" :key="activity.name">
                     <div class="activity_card">
                         <h4>{{activity.name}}</h4><hr>
                         <p>Data de início: {{activity.currentTime}}</p>

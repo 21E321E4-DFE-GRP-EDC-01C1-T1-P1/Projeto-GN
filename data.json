@@ -1,8 +1,13 @@
 {
-  "user": {
-      "name": "Usuário 1",
-      "email": "usuario1@gmail.com",
-      "cell": "99999-9999",
+  "users": [
+    {
+      "name": "Usuário default",
+      "email": "usuariodefault@gmail.com",
+      "password": "123",
+      "Birthday": "12/02/1998",
+      "cellNumber": "99999-9999",
+      "genre": "M",
       "activities": []
-  }
+    }
+  ]
 }
